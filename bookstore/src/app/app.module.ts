@@ -18,7 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { CategoriaReadComponent } from './components/view/categoria/categoria-read/categoria-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { CategoriaCreateComponent } from './components/view/categoria/categoria-create/categoria-create.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -58,7 +58,8 @@ import { LivroCreateComponent } from './components/view/livro/livro-create/livro
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
