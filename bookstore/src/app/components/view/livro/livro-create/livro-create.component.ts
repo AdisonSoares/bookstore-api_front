@@ -42,6 +42,10 @@ export class LivroCreateComponent implements OnInit {
     })
   }
 
+  cancel(): void{
+    this.router.navigate([`categorias/${this.id_cat}/livros`])
+  }
+
   getMessage(){
     if(this.titulo.invalid){
       return 'O campo título deve conter entre 3 e 100 caracteres!'
